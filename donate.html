@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="donate.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Lets Donate</h1>
+        <form class="donate-data">
+            <label for="text" >Name</label>
+            <input type="text" id="name" placeholder="Full name" name="name"
+            required minlength="2" maxlength="100"/>
+            <label for="text" >Contact</label>
+            <input type="tel" id="phone" placeholder="555-555-5555" name="phone"
+            required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  />
+            <label for="text" >Email</label>
+            <input type="email" id="email" placeholder="email@address.com" name="email"
+            required/>
+            <label for="text" >Address</label>
+            <textarea type="text" placeholder=" enter location" ></textarea>
+            
+            <label for="textarea" >Things you want to donate</label>
+            <textarea type="text" placeholder="enter things you want to donate" ></textarea>
+            
+            <button type="submit">Donate</button>
+        </form>
+    </div>
+    
+</body>
+</html>

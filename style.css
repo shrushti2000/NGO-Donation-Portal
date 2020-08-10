@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cantata+One&family=Cormorant+Upright:wght@600&family=Crimson+Text:ital,wght@1,400;1,600&family=Gentium+Book+Basic:ital@1&family=Great+Vibes&family=Roboto+Slab&family=Tangerine:wght@700&display=swap');
+/**
+font-family: 'Allura', cursive;
+font-family: 'Cantata One', serif;
+font-family: 'Cormorant Upright', serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Tangerine', cursive;
+
+
+**/
+
+
+/**Navbar starts**/
+*{
+ box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color:#333;
+}
+
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links{
+    height: 100%;
+}
+
+ 
+
+
+.navbar-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 1rem;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Gentium Book Basic', serif;
+    font-family: 'Cantata One', serif;
+}
+
+.navbar-links li a:hover{
+    color: darkgrey;
+}
+
+.toggle-button{
+    position:absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/**Navbar end**/
+
+
+/** home start**/
+
+.home{
+    background-image: url("sleepingboy.jpg");
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+}
+
+.home .tagline{
+   
+    font-family: 'Suez One', serif;
+    position: absolute;
+    left: 80px;
+    top: 20px;
+    font-size: 70px;
+    z-index: 1;
+    color: whitesmoke;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Roboto Slab', serif;
+
+}
+/**home end**/
+
+/**about start
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("light-grey.jpg");
+    height: 400px;
+    
+
+}
+ p {
+    font-size: 20px;
+    color: black;
+}
+
+.about-us-imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 0px 5px 30px 10px rgba(0,0,0,0.5);
+}
+
+about end**/
+
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 0px 5px 30px 10px rgba(0,0,0,0.5);
+
+    
+}
+
+
+.about-us-info{
+    font-size: 30px;
+    font-family: 'Cormorant Upright', serif;
+    animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+
+
+
+/**extra-section**/
+.extra-section{
+    background-image: url("twoboys.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+
+}
+
+.extra-section .extra-section-para{
+    font-size: 20px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    color: white;
+    font-size: 50px;
+    
+}
+
+.extra-extra-section{
+    
+    background-color: white;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.extra-extra-extra-section{
+    background-image: url("manychildrenunsplash.jpg");
+    
+
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+}
+
+.extra-extra-section-para{
+    font-family: 'Cormorant Upright', serif;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+
+.extra-extra-extra-section-para{
+    font-family: 'Cantata One', serif;
+    font-size: 60px;
+    color:white;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.contact{
+    background-color: black;
+    height: 40px;
+}
+
+.option {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    /**responsive navbar starts**/
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+    }
+    .navbar-links ul li a{
+        padding: .5rem  1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    /**Responsive Navbar ends**/
+
+    /**responsive home**/
+
+    .home{
+        background-image: url("res-img-ngo.jpg");
+        width: 100%;
+    }
+
+    .home .tagline{
+        
+        left: 30px;
+        top: 120px;
+        font-size: 45px;
+        font-family: 'Cormorant Upright', serif;
+    
+        
+    }
+
+    /** responsive about
+
+    .about{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .about-us-
+
+    .about-us-imgs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+    }**/
+
+    .about{
+        flex-direction: column;
+
+    }
+
+    .about-us-info{
+        font-size: 20px;
+    }
+
+    img{
+        width: 300px;
+        height: 200px;
+        
+    }
+
+    .extra-extra-section{
+    
+        background-color:#e0dddc;
+        height: 500px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .extra-extra-extra-section{
+        background-image: url("boywashingutensils.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        height: 650px;
+        position: relative;
+    }
+    .extra-extra-extra-section-para{
+        color: white;
+    }
+
+
+}

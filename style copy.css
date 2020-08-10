@@ -1,0 +1,204 @@
+
+/**Navbar starts**/
+*{
+ box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color:#333;
+}
+
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links{
+    height: 100%;
+}
+
+ 
+
+
+.navbar-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.toggle-button{
+    position:absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/**Navbar end**/
+
+
+/** home start**/
+
+.home{
+    background-image: url("bg1.jpg");
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+}
+
+.home .tagline{
+    background-color: whitesmoke;
+    opacity: 0.5;
+    
+    font-family: 'Suez One', serif;
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    font-size: 60px;
+    z-index: 1;
+
+}
+/**home end**/
+
+/**about start**/
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("light-grey.jpg");
+
+}
+ p {
+    font-size: 20px;
+    color: black;
+}
+
+.about-us-imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    box-shadow: 0px 5px 30px 10px rgba(0,0,0,0.5);
+}
+
+/**about end**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    /**responsive navbar starts**/
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+    }
+    .navbar-links ul li a{
+        padding: .5rem  1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    /**Responsive Navbar ends**/
+
+    /**responsive home**/
+
+    .home{
+        background-image: url("res-img-ngo.jpg");
+        width: 100%;
+    }
+
+    .home .tagline{
+        
+        left: 40px;
+        top: 80px;
+        font-size: 30px;
+    }
+
+    /** responsive about**/
+
+    .about-us-imgs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+    }
+
+
+}

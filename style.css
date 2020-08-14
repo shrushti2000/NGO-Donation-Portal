@@ -318,6 +318,7 @@ img{
     .home{
         background-image: url("res-img-ngo.jpg");
         margin: 0px;
+        background-attachment: fixed;
 
        
     }

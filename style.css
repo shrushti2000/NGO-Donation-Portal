@@ -102,6 +102,7 @@ body{
     background-attachment: fixed;
     height: 600px;
     width: 100%;
+    background-repeat: no-repeat;
 }
 
 .home .tagline{
@@ -277,7 +278,7 @@ img{
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:760px){
 
     /**responsive navbar starts**/
     .navbar{
@@ -316,7 +317,9 @@ img{
 
     .home{
         background-image: url("res-img-ngo.jpg");
-        width: 100%;
+        margin: 0px;
+
+       
     }
 
     .home .tagline{

@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="ngologin-signup.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     
     <div class="container">
-        <div class="login">
+        <div class="login" data-aos="zoom-in-up" data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
             <h1>Login</h1>
-            <form class="login-data">
+            <form  id="login" class="login-data">
                 <label for="text" >NGO Name</label>
-                <input type="text" id="name" placeholder="Full name" name="name"
+                <input type="text" id="ngo-name" placeholder="Full name" name="name"
                 required minlength="2" maxlength="100" />
                 <label for="text" >Password</label>
-                <input type="password" id="password1" placeholder="Create Password (Min. 8 Characters)" name="password"
+                <input type="password" id="ngo-password" placeholder="Create Password (Min. 8 Characters)" name="password"
                 required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="please include 1 uppercase Character,1 lowercase Character and 1 number. "
           />
                 <button type="submit">Login</button>
@@ -24,25 +27,26 @@
             </form>
         </div>
         
-        <div class="sign-up">
+        <div class="sign-up" data-aos="zoom-in-up" data-aos-duration="1000"
+        data-aos-easing="ease-in-out"> 
             <h1>Sign Up</h1>
-            <form class="sign-up-data">
+            <form id="sign-up-data" class="sign-up-data" >
                 <label for="text" >NGO Name</label>
-                <input type="text" id="name" placeholder="Full name" name="name"
+                <input type="text" id="name" placeholder="Full name" name="ngoname"
                 required minlength="2" maxlength="100" />
                 <label for="text" >Contact</label>
-                <input type="tel" id="phone" placeholder="555-555-5555" name="phone"
+                <input type="tel" id="phone" placeholder="555-555-5555" name="ngophone"
                 required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
                 <label for="text" >Email Address</label>
-                <input type="email" id="email" placeholder="email@address.com" name="email" required />
+                <input type="email" id="email" placeholder="email@address.com" name="ngoemail" required />
                 <label for="text" >Location</label>
-                <textarea type="text" placeholder=" enter location" ></textarea>
+                <textarea type="text" placeholder=" enter location" name="location"></textarea>
                 <label for="text" >Password</label>
-                <input type="password1" id="password1" placeholder="Create Password (Min. 8 Characters)" name="password1"
+                <input type="password" id="password1" placeholder="Create Password (Min. 8 Characters)" name="password1"
                 required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="please include 1 uppercase Character,1 lowercase Character and 1 number. "
           />
                 <label for="text" >Confirm Password</label>
-                <input type="password2" id="password2" placeholder="Create Password (Min. 8 Characters)" name="password2"
+                <input type="password" id="password2" placeholder="Create Password (Min. 8 Characters)" name="password2"
                 required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="please include 1 uppercase Character,1 lowercase Character and 1 number. "
           />
                 <button type="submit">SignUp</button>
@@ -50,5 +54,10 @@
         </div>
         
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="ngologin-signupScript.js"></script>
 </body>
 </html>

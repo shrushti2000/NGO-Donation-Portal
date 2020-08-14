@@ -13,7 +13,7 @@ body{
 
 }
 
-.donate-data{
+.donate-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +62,7 @@ button{
 }
 
 @media screen and (max-width:768px){
-    .donate-data{
+    .donate-form{
         width: 300px;
     }
     input{

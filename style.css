@@ -252,14 +252,16 @@ img{
 
 .contact{
     background-color: black;
-    height: 40px;
+    height: 60px;
 }
 
-.option {
-    -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-    -webkit-animation-iteration-count: 5;
+.Copyright{
+    color: white;
+    text-align: center;
+    padding: 0px;
+    margin-top: 0px;
 }
+
 
 
 

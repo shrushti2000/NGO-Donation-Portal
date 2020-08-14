@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="donate.css"/>
 </head>
 <body>
-    <div class="container">
+    <div class="container"  data-aos="zoom-in" data-aos-duration="1000">
         <h1>Lets Donate</h1>
-        <form class="donate-data">
+        <form id="donate-form" class="donate-form"
+        data-aos-easing="ease-in-out">
             <label for="text" >Name</label>
             <input type="text" id="name" placeholder="Full name" name="name"
             required minlength="2" maxlength="100"/>
@@ -20,14 +23,18 @@
             <input type="email" id="email" placeholder="email@address.com" name="email"
             required/>
             <label for="text" >Address</label>
-            <textarea type="text" placeholder=" enter location" ></textarea>
+            <textarea type="text" placeholder=" enter location" name="address"></textarea>
             
             <label for="textarea" >Things you want to donate</label>
-            <textarea type="text" placeholder="enter things you want to donate" ></textarea>
+            <textarea type="text" placeholder="enter things you want to donate" name="goods"></textarea>
             
             <button type="submit">Donate</button>
         </form>
     </div>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="donateScript.js"></script>
 </body>
 </html>

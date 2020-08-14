@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="adminstyle.css">
 </head>
 <body>
     <div class="main-container">
-        <div class="container">
+        <div class="container"  data-aos="zoom-in-up" data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
             <h1>Admin Login</h1>
-            <form id="form">
+            <form id="admin_form">
                 <label for="text" >Name</label>
                 <input type="text" id="name" placeholder="Full name" name="admin-name"
                 required minlength="2" maxlength="100"/>
                 <label for="text" >Password</label>
-                <input type="password" id="password1" placeholder="Enter Password" name="password"
+                <input type="password" id="password" placeholder="Enter Password" name="password"
                 required   />
                 <button type="submit">Login</button>
                 
             </form>
         </div>
     </div>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="adminScript.js"></script>
 </body>
 </html>

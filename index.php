@@ -26,7 +26,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="admin.php">Admin</a></li>
-                    <li><a href="ngologin-signup.html">NGO</a></li>
+                    <li><a href="ngologin-signup.php">NGO</a></li>
                     <li><a href="donate.php">Donate</a></li>
                 </ul>
             </div>

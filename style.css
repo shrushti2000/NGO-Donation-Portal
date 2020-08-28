@@ -58,7 +58,8 @@ body{
     list-style: none;
 }
 
-.navbar-links li a{
+.navbar-links li a
+{
     display: block;
     text-decoration: none;
     color: white;

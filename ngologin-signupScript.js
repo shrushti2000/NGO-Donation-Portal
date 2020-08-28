@@ -3,7 +3,7 @@ const signup=document.getElementById('sign-up-data')
 
 
 function storeNgoLogin(e){
-    e.preventDefault();
+  //  e.preventDefault();
     const ngo_login={
         name:login.name.value,
         password:login.password.value
@@ -15,7 +15,7 @@ login.addEventListener('submit',storeNgoLogin);
 
 
 function storeNgoSignup(e){
-    e.preventDefault();
+    //e.preventDefault();
     const ngo_signup={
         name:signup.ngoname.value,
         phone:signup.ngophone.value,

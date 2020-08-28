@@ -1,7 +1,7 @@
 const donate_form=document.getElementById('donate-form');
 
 function storeDonateData(e){
-    e.preventDefault();
+  //  e.preventDefault();
     const donate_data={
         name:donate_form.name.value,
         phone:donate_form.phone.value,

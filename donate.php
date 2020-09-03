@@ -2,7 +2,7 @@
     $host = "localhost:3307";
     $user = "root@";
     $pass = "";
-    $db = "ip";
+    $db = "main";
     $conn = mysqli_connect($host, $user, $pass, $db) or die('Error Connecting');
     
 

@@ -14,7 +14,7 @@
       <form method="POST" action="donatedetails.php">
       <tbody>
       <?php
-        $conn=mysqli_connect("localhost:3307","root@","","main") or die("connection not established");
+        $conn=mysqli_connect("localhost:3307","root@","","ipfinal") or die("connection not established");
         
         $query=mysqli_query($conn,"select * from donar");
         while($row=mysqli_fetch_array($query)){

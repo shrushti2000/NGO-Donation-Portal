@@ -1,6 +1,6 @@
 <?php
-    $host = "localhost:3307";
-    $user = "root@";
+    $host = "localhost";
+    $user = "root";
     $pass = "";
     $db = "ipfinal";
     $conn = mysqli_connect($host, $user, $pass, $db) or die('Error Connecting');
@@ -17,6 +17,18 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="donate.css"/>
+
+
+    <style>
+        a{
+            color: grey;
+        }
+        a:hover
+        {
+            color: black;
+        
+        }
+    </style>
 </head>
 <body>
     

@@ -1,6 +1,6 @@
 <?php
-    $host = "localhost:3307";
-    $user = "root@";
+    $host = "localhost";
+    $user = "root";
     $pass = "";
     $db = "ipfinal";
     $conn = mysqli_connect($host, $user, $pass, $db) or die('Error Connecting');
@@ -18,8 +18,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="ngologin-signup.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+input:focus {
+  background-color: #f2f2f2;
+}
+</style>
 
 </head>
+
 <body>
 
 <?php

@@ -1,8 +1,8 @@
 <?php
-    $host = "localhost:3307";
-    $user = "root@";
+    $host = "localhost";
+    $user = "root";
     $pass = "";
-    $db = "ip";
+    $db = "ipfinal";
     $conn = mysqli_connect($host, $user, $pass, $db) or die('Error Connecting');
     
 

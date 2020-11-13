@@ -4,6 +4,8 @@
 
 A web interface where users can donate their goods such as old books , toys and unused medicines to NGOs. People can donate the goods by filling up a form. NGO's can create their account and search for the goods that they are in need of.
 
+![GitHub Logo](/demo.gif)
+
 ## Tech stack
 Front end | Back end
 ------------ | -------------

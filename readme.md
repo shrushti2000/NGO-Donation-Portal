@@ -18,6 +18,9 @@ JavaScript |
 * NGO's can create an account and look for the goods they want.
 * Admin can control both NGO and user.
 
+## View the website live
+http://ngodonationportal.epizy.com/
+
 
 
 
